@@ -11,5 +11,5 @@ jobs:
     - name: Send notification to Discord
       run: |
         curl -X POST -H "Content-Type: application/json" \
-        -d "{\"content\": \"Pull request opened by ${{ github.actor }}: ${{ github.event.pull_request.html_url }}\"}" \
-        ${DISCORD_WEBHOOK_URL}
+        -d "{\"content\": \"Pull request opened by ${{ github.actor }}: ${{ github.event.pull_request.html_url }}\"}" \ https://discord.com/api/webhooks/1281658826759606343/hk_hbEBDirtBSSdm76ZLpz1Hsx1e0TbQ08H0Iep0OS_mGWjOaLwh1bsEEzO7fWdmA5KV
+
